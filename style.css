@@ -1,41 +1,51 @@
 * {
-    box-sizing: border-box;
-  }
-  a:hover {
-    outline: solid 2.2px var(--platinum);
-    color: var(--platinum);
-    border-radius: 2px;
-  } 
-  
-  :root {
-    --white: #ffffff;
-    --platinum: #E5E4E2;
-    --black: #080808;
-    --eerie-black: #160C28;
-    --straw: #ECE471;
-  }
-  
-  body {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2em;
-    background-color: var(--eerie-black);
-    color: var(--platinum);
-  }
+  box-sizing: border-box;
+}
+a:hover {
+  outline: solid 2.2px var(--platinum);
+  color: var(--platinum);
+  border-radius: 2px;
+}
+
+:root {
+  --white: #ffffff;
+  --platinum: #e5e4e2;
+  --black: #080808;
+  --eerie-black: #160c28;
+  --straw: #ece471;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  background-color: var(--eerie-black);
+  color: var(--platinum);
+}
 
 section {
-    background-color: var(--eerie-black);
-  }
+  background-color: var(--eerie-black);
+}
 
-/* append additional properties to existing bootstrap the navbar classes */  
+/* append additional properties to existing bootstrap the navbar classes */
+
 .navbar a {
-   color: var(--platinum);
+  color: var(--platinum);
 }
 .nav-link:hover {
-    color: var(--platinum);
+  color: var(--platinum);
 }
 
 .primary-ul {
-    border-bottom: solid 2px var(--platinum);
+  border-bottom: solid 2px var(--platinum);
+}
+
+.navbar button {
+  color: var(--platinum);
+  outline-color: var(--platinum);
+  margin-bottom: 5%;
+}
+.fa-bars {
+  color: var(--platinum);
 }
 /*
 a (all links)
