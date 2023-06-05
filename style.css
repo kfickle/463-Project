@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  a:hover {
+    outline: solid 2.2px var(--platinum);
+    color: var(--platinum);
+    border-radius: 2px;
+  } 
+  
+  :root {
+    --white: #ffffff;
+    --platinum: #E5E4E2;
+    --black: #080808;
+    --eerie-black: #160C28;
+    --straw: #ECE471;
+  }
+  
+  body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    background-color: var(--eerie-black);
+    color: var(--platinum);
+  }
+
+section {
+    background-color: var(--eerie-black);
+  }
+
+/* append additional properties to existing bootstrap the navbar classes */  
+.navbar a {
+   color: var(--platinum);
+}
+.nav-link:hover {
+    color: var(--platinum);
+}
+
+.primary-ul {
+    border-bottom: solid 2px var(--platinum);
+}
+/*
+a (all links)
+a: hover (links with the mouse cursor over it)
+a: focus (links tabbed to on a keyboard)
+a: visited (visited links)
+*/
