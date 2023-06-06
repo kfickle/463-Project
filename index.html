@@ -20,22 +20,10 @@
     <meta name="author" content="Rae Fickle" />
     <meta name="robots" content="index, follow" />
 
-    <!-- open graph -->
-    <meta property="og:title" content="Rae Fickle - Web Development & Design" />
-    <meta
-      property="og:description"
-      content="Rae Fickle is a web developer and designer based in PDX."
-    />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-
     <!-- custom styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
@@ -54,6 +42,7 @@
 
     <header class="container-fluid">
       <nav class="navbar navbar-expand-lg px-1 mb-5 mt-4 fs-4">
+        <h1><a href="index.html" class ="navbar-brand fs-4 px-2"> Rae Fickle</a></h1>
         <button
           class="navbar-toggler ms-auto ms-sm-2"
           type="button"
@@ -63,76 +52,92 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="">menu</span>
+          <span>menu</span>
           <i class="fa-solid fa-bars"></i>
         </button>
         <!-- primaryNav ID needed to implement toggler for the mobile hamburger menu. Do not change taget ID unless it's also changed on the toggler btn. -->
         <div class="collapse navbar-collapse" id="primaryNav">
           <ul class="primary-ul navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link me-3" href="./background.html">Background</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work">My Work</a>
+              <a class="nav-link me-3" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
+
+    <!-- main site content starts-->
     <main id="main" class="fs-5">
-      <!-- site intro message starts -->
-
+      <!-- site about section starts -->
       <section
-        id="intro"
-        class="container-fluid min-vh-100 section-padding-top"
+        id="about"
+        class="container-fluid section-padding"
       >
-        <div class="row gx-5 mx-auto">
-          <div class="col-lg-8 col-md-9 col-sm-12">
-            <div class="mb-5 mb-lg-0 text-lg-start">
-              <!-- heading level 1 intentionally used, to name the site and it's subsequent content (which is all mine). Head levels 2 and beyond
+        <div class="row gx-5 mx-lg-5">
+          <!--row start-->
+          <div class="col-lg-9 col-md-10 col-sm-12">
+            <!-- column wrapper start-->
+            <!-- heading level 1 intentionally used, to name the site and it's subsequent content (which is all mine). Head levels 2 and beyond
                      will be used for subsequent sections-->
-              <h1 class="display-3 lh-2 mb-3 fw-bold">Hey, It's Rae!</h1>
-              <p class="fs-3 mb-2">
-                I'm a Web Developer, Technology Advisor and Theater Nerd Based
-                in Portland, Oregon.
-              </p>
-              <p>
-                My site is currently under construction (pardon the virtual
-                dust!) but I'm hoping to use this space to eventually showcase
-                my work, share my experiences as a queer, disabled developer
-                working in higher education, and pass along some tips and tricks
-                I've found valuable during my development journey.
-              </p>
+            <h2 class="display-3 lh-2 mb-3 fw-bold">Hey, It's Rae!</h2>
+            <p class="fs-3 mb-2">
+              I'm a Web Developer, Technology Advisor and Theater Nerd Based in
+              Portland, Oregon.
+            </p>
+            <p>
+              My site is under construction (pardon the virtual dust!) but I'm
+              hoping to use this space to showcase my recent work, as well as
+              share my experiences working as a queer, disabled web developer in
+              the education sector.
+            </p>
+            <p>
+              A fair amount of my current role encompasses teaching others, so
+              eventually, I'd like to create a blog section of the site where I
+              can pass along some tips and tricks I've found valuable during my
+              development journey.
+            </p>
+            <!-- start social media links -->
 
-              <!-- start social media links -->
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/kahela-fickle/"
-                  target="_self"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                  ><i class="fa-brands fa-linkedin fs-2"></i
-                ></a>
-                <a
+            <div>
+              <a
+                href="https://www.linkedin.com/in/kahela-fickle/"
+                target="_self"
+                rel="noopener noreferrer"
+                class="social-link me-4"
+                ><i class="fa-brands fa-linkedin fs-2"></i
+              ></a>
+              <a
                 href="https://github.com/kfickle"
                 target="_self"
                 rel="noopener noreferrer"
                 class="social-link"
-                ><i class="fa-brands fa-square-github fs-2"></i></i
+                ><i class="fa-brands fa-square-github fs-2"></i
               ></a>
-            </div> <!-- end social links-->
-
+            </div>
+            <!-- end social links-->
           </div>
+          <!-- column wrapper start-->
         </div>
+        <!-- row end-->
       </section>
       <!-- site intro message ends -->
+
     </main>
 
-    <footer></footer>
+    <footer class="footer-fixed col-11" >
+
+       <!-- Copyright -->
+       <p class="text-center"> &copy; Copyright <span id="year"></span></p>
+
+  </span>
+</footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

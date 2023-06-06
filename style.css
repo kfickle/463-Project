@@ -15,10 +15,12 @@ body {
   font-size: 1.2em;
   background-color: var(--eerie-black);
   color: var(--platinum);
+  padding: 0 5% 0 5%;
 }
 
-section {
-  background-color: var(--eerie-black);
+.footer-fixed {
+  position: absolute;
+  bottom: 0;
 }
 
 /* Header and Navigation Styles --- */
@@ -28,10 +30,18 @@ section {
   color: var(--platinum);
 }
 
-/* use default bootstrap classes to style hover, focus, and active link states */
+/* target default bootstrap classes to style hover, focus, and active link states */
 .nav-link:hover,
 .nav-link:focus,
-.nav-link:active {
+.nav-link:active,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: var(--platinum);
+  outline: solid 2px var(--platinum);
+  border-radius: 2px;
+}
+.current-page {
   color: var(--platinum);
   outline: solid 2px var(--platinum);
   border-radius: 2px;
@@ -43,7 +53,7 @@ section {
 }
 
 /* target the navbar mobile menu toggler */
-.navbar button {
+.navbar a {
   color: var(--platinum);
   outline-color: var(--platinum);
   margin-bottom: 5%;
@@ -57,7 +67,6 @@ section {
 /* social media icon styles --- */
 .social-link {
   color: var(--platinum);
-  margin-right: 1%;
   padding: 0.7% 0.3% 0% 0.3%;
 }
 .social-link:hover,
@@ -68,18 +77,27 @@ section {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 1080px) {
-  /* Header and Navigation Styles --- */
+/* utility classes -- */
 
-  /*Structural Styles and Spacing --- */
+/*hides elements on mobile */
+.mobile-hide {
+  display: none;
+}
+/* utiity class for rounding element borders */
+.rounded {
+  border-radius: 2px;
+  outline: solid 2px var(--platinum);
+}
 
-  /* d-flex and vertical centering available in bootstrap were not sufficient to 
-   * achieve desired design, so custom padding has been implmented on lg and xl devices*/
-  .section-padding-top {
-    padding-top: 8%;
-  }
+/* adds padding to top of sections, beyond what bootstrap provides */
+.section-padding {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
 
-  .is-red {
-    background-color: red;
+@media screen and (min-width: 1600px) {
+  /*show elements on larger devices that were previously hidden */
+  .mobile-hide {
+    display: block;
   }
 }
