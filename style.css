@@ -1,11 +1,6 @@
 * {
   box-sizing: border-box;
 }
-a:hover {
-  outline: solid 2.2px var(--platinum);
-  color: var(--platinum);
-  border-radius: 2px;
-}
 
 :root {
   --white: #ffffff;
@@ -26,30 +21,65 @@ section {
   background-color: var(--eerie-black);
 }
 
-/* append additional properties to existing bootstrap the navbar classes */
+/* Header and Navigation Styles --- */
 
+/* target all links in the navbar (would include brand, if we ever wanted to add one) */
 .navbar a {
   color: var(--platinum);
 }
-.nav-link:hover {
+
+/* use default bootstrap classes to style hover, focus, and active link states */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
   color: var(--platinum);
+  outline: solid 2px var(--platinum);
+  border-radius: 2px;
 }
 
+/* adds decorative border to bottom of navbar */
 .primary-ul {
   border-bottom: solid 2px var(--platinum);
 }
 
+/* target the navbar mobile menu toggler */
 .navbar button {
   color: var(--platinum);
   outline-color: var(--platinum);
   margin-bottom: 5%;
 }
+
+/* target the mobile menu toggler icon, builds on the fontawesome class */
 .fa-bars {
   color: var(--platinum);
 }
-/*
-a (all links)
-a: hover (links with the mouse cursor over it)
-a: focus (links tabbed to on a keyboard)
-a: visited (visited links)
-*/
+
+/* social media icon styles --- */
+.social-link {
+  color: var(--platinum);
+  margin-right: 1%;
+  padding: 0.7% 0.3% 0% 0.3%;
+}
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  color: var(--eerie-black);
+  background-color: var(--platinum);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1080px) {
+  /* Header and Navigation Styles --- */
+
+  /*Structural Styles and Spacing --- */
+
+  /* d-flex and vertical centering available in bootstrap were not sufficient to 
+   * achieve desired design, so custom padding has been implmented on lg and xl devices*/
+  .section-padding-top {
+    padding-top: 8%;
+  }
+
+  .is-red {
+    background-color: red;
+  }
+}
