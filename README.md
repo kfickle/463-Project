@@ -1,5 +1,5 @@
 # 463-Project
-Final Project for CS463: A basic portfolio site
+#Final Project for CS463: A basic portfolio site
 
 ##How to deploy from a GitHub repository. 
 By following these instructions, you'll be able to use gihub pages to publish this project 
