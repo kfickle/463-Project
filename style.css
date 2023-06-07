@@ -17,18 +17,19 @@ body {
   color: var(--platinum);
   padding: 0 5% 0 5%;
 }
-
-.footer-fixed {
-  position: absolute;
-  bottom: 0;
+/* target all links and set their*/
+a {
+  color: var(--platinum);
+}
+a:hover,
+a:focus,
+a:active {
+  color: var(--eerie-black);
+  background-color: var(--platinum);
+  border-radius: 2px;
 }
 
 /* Header and Navigation Styles --- */
-
-/* target all links in the navbar (would include brand, if we ever wanted to add one) */
-.navbar a {
-  color: var(--platinum);
-}
 
 /* target default bootstrap classes to style hover, focus, and active link states */
 .nav-link:hover,
@@ -38,6 +39,7 @@ body {
 .navbar-brand:focus,
 .navbar-brand:active {
   color: var(--platinum);
+  background-color: var(--eerie-black);
   outline: solid 2px var(--platinum);
   border-radius: 2px;
 }
@@ -91,8 +93,50 @@ body {
 
 /* adds padding to top of sections, beyond what bootstrap provides */
 .section-padding {
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+.footer-fixed {
+  position: absolute;
+  bottom: 0;
+}
+
+/* project page styles --- */
+button {
+  unset: all; /* removes default button styles */
+  color: var(--platinum);
+}
+
+/* target the read more button for the project page*/
+.read-more-btn,
+.form-btn {
+  color: var(--platinum);
+  border: solid 2px var(--platinum);
+  background-color: var(--eerie-black);
+  padding: 0.5% 1% 0.5% 1%;
+}
+.read-more-btn:hover,
+.read-more-btn:focus,
+.read-more-btn:active,
+.form-btn:hover,
+.form-btn:focus,
+.form-btn:active {
+  color: var(--eerie-black);
+  background-color: var(--platinum);
+  border-radius: 2px;
+}
+
+.project-content {
+  display: none;
+}
+
+/* contact page styles --- */
+.input-field,
+.textarea {
+  display: block;
+  width: 100%;
+  background-color: var(--eerie-black);
+  color: var(--platinum);
 }
 
 @media screen and (min-width: 1600px) {
