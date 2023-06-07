@@ -14,6 +14,9 @@ Under "Source," select the master branch and save the settings.
 
 ##Resources Used
 https://getbootstrap.com/docs/5.0
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear
+
 https://eloquentjavascript.net/
+
 https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
