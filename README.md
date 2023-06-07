@@ -21,3 +21,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://eloquentjavascript.net/
 
 https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
+
+
+Project hosted at https://kfickle.github.io/463-Project/
